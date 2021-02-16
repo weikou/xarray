@@ -34,7 +34,7 @@ def add_standard_imports(doctest_namespace, tmpdir):
     doctest_namespace["pd"] = pd
     doctest_namespace["xr"] = xr
 
-    # always seed numpy.random to make the examples deterministic
+    # always seed np.random to make the examples deterministic
     np.random.seed(0)
 
     # always switch to the temporary directory, so files get written there
